@@ -1,0 +1,443 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(228, 201, 138);
+    font-size: 14px;
+    font-family: sans-serif;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+.container{
+    padding: 0 30px;
+}
+header{
+    background-color: #E5D3B3;
+    padding:10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header .bake{
+    display: flex;
+    align-items: center;
+}
+header .bake .menu img{
+    width: 30px;
+    margin-right: 10px;
+}
+header .bake .logo img{
+    width: 50px;
+}
+header .bake p{
+    font-size: 16px;
+    color: #492000;
+    font-weight: 600;
+}
+
+header nav .text{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    color: #492000;
+}
+nav .text p{
+    color: #492000;
+}
+nav .text button.connect{
+    color:white;
+    background-color: #4f220c;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 12px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+nav .text button.connect:hover{
+    box-shadow: 1px 1px 3px #622A0F;
+}
+nav .text .setting{
+    background-color:#622b0f4f;
+    border-radius: 10px;
+    padding: 2px 5px;
+}
+nav .text .setting:hover{
+    background-color:#622b0f8b;
+}
+nav .text .setting img{
+    width: 30px;
+}
+main{
+    padding: 0 50px;
+    text-align: center;
+}
+.section1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    color:#4920008e; 
+    align-items: center;
+    font-weight: 600;
+    padding: 20px 0;
+}
+.section1 h3{
+    margin-right: 60px;
+}
+.section1 h3:first-child{
+    color:#492000; 
+}
+.section1 h3:first-child::after{
+    content: "";
+    display: block;
+    margin: auto;
+    height: 3px;
+    width: 90%;
+    top: 2px;
+    left: 0;
+    background: transparent;
+    transition: all .3s;
+    position: relative;
+    background-color:#492000;
+}
+.section2{
+    color:brown;
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+.section2 .harvest{
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+.section2 .harvest .logo img{
+    width: 10px;
+}
+.section2 .harvest .amount{
+    font-size: 18px;
+    }
+.section2 .harvest span{
+font-size: 10px;
+margin: 0 20px;
+}
+.section2 .stake{
+
+    display: flex;
+    align-items: center;
+}
+.stake .text{
+    color: #492000;
+}
+#toggle{
+    position: relative;
+    display: block;
+    cursor: pointer;
+    width: 48px;
+    height: 24px;
+    border-radius: 30px;
+    background: #492000bd;
+    transition: 0.5;
+    margin-left: 10px;
+}
+#toggle.active{
+    background: #492000bd;
+}
+#toggle .indicator{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 24px;
+    background: #fff;
+    border-radius: 50%;
+    transform: scale(0.8);
+    transition: 0.5s;
+}
+#toggle.active .indicator{
+    left: 23px;
+    background:  #fff;
+}
+.section2 .harvest .logo img{
+    width: 30px;
+}
+.section2 .harvest .amount{
+    color: #622A0F;
+    font-weight: 600;
+}
+.section2 .harvest button{
+    color: white;
+    font-size:12px;
+    padding: 5px 10px;
+    background-color: #622A0F;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+}
+.wallet-card{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+.wallet-card .card{ 
+    background-color: #E5D3B3;
+    border: 1px solid  #492000; 
+    width: 17rem;
+    height: 19rem;
+    text-align: center;
+    padding: 20px 0;
+    border-radius:12px ;
+    padding: 15px;
+    transition: .7s;
+    cursor: pointer;
+    overflow: hidden;
+}
+.wallet-card .card:hover{
+    box-shadow: 1px 2px 7px 2px #492000;;
+} 
+.wallet-card .card .image .star{
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: 11.2rem;
+    bottom: 34px;
+    background-color: #622b0ffc;
+    clip-path: polygon(100% 0%, 100% 100%, 0% 0%);
+    width: 80px;
+    height: 80px;
+    padding: 0 10px;
+    justify-content: end;
+}  
+.wallet-card .card .image .star img{
+    width: 20px;
+    height: 20px;
+}
+.wallet-card .card .image .display{
+    position: relative;
+    bottom: 60px;
+}
+.wallet-card .card .image .logo img{
+    width: 60px;
+}
+.wallet-card .card .image h2{
+    color: #492000;
+}
+.wallet-card .card .text .text1, .text2, .text3{
+    display: flex;
+    color: #492000;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+.wallet-card .card .text span{
+    color: #492000;
+    font-weight: 600;
+}
+.wallet-card .card button{
+    color: white;
+    font-size:12px;
+    padding: 5px 8px;
+    background-color: rgb(219, 98, 28);
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    height: 2rem;
+    opacity: 60%;
+}
+.modal-popup{
+    position: absolute;
+    width: 100%;
+    height: 120vh;
+    top:0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.304);
+    display: none;
+    backdrop-filter:blur(4px);
+    padding-top: 50px;
+}
+.modal-popup .modal{
+    width: 400px;
+    height: 450px;
+    margin: 30px auto;
+}
+.modal-popup .modal .wallet{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.modal-popup .modal .wallet .connect{
+    display: flex;
+    align-items: center;
+}
+.modal-popup .modal .wallet .connect img{
+ width: 35px;
+ margin-right: 10px;
+ user-select: none;
+}
+.modal-popup .modal .wallet .connect span{
+    color:white;
+    font-size: 18px;
+    font-weight: 600;
+    user-select: none;
+}
+.modal-popup .modal .wallet .close{
+    background-color:white;
+    display: flex;
+    padding: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.modal-popup .modal .display {
+    background-color: white;
+    text-align: center;
+    margin: 10px auto;
+    padding:20px;
+    border-radius: 20px;
+
+}
+#toggle1{
+    position: relative;
+    display: flex;
+    display: block;
+    cursor: pointer;
+    width: 50%;
+    height: 24px;
+    border-radius: 5px;
+    background: grey;
+    transition: 0.5;
+    margin-left: 10px;
+    margin: 10px auto;
+}
+#toggle1 p{
+    position: absolute;
+    display: flex;
+    padding: 5px 0;
+    align-items: center;
+    z-index: 1;
+    font-size: 12px;
+}
+#toggle1 p:first-child{
+    display: flex;
+    margin-left: 25px;
+}
+#toggle1 p:last-child{
+    display: flex;
+    margin-left: 62%;
+}
+#toggle1.active{
+    background: grey;
+}
+#toggle1 .indicator{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 24px;
+    background: #fff;
+    border-radius: 5px;
+    transform: scale(0.8);
+    transition: 0.5s;
+}
+#toggle1.active .indicator{
+    left: 50%;
+    background:  #fff;
+}
+.modal-popup .modal .display p{
+    font-size:18px;
+}
+.modal-popup .modal .display input{
+    width: 100%;
+    height: 1.5rem;
+    background-color:rgba(128, 128, 128, 0.697);
+    outline: none;
+    border: none;
+    padding: 10px 10px;
+    margin: 13px 0;
+    border-radius:8px
+}
+.modal-popup .modal .crypto-wallet{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; 
+     gap: 25px;
+}
+.modal-popup .modal .crypto-wallet .image{
+    width: 70px;
+}
+.modal-popup .modal .crypto-wallet p{
+    font-size:12px
+}
+.modal-popup .modal .crypto-wallet img{
+    width: 50px;
+    border-radius:10px;
+    box-shadow: 1px 1px 5px black;
+}
+@media screen and (min-width:1024px) and (max-width:1200px){
+    .modal-popup{
+        width: 100%;
+        height: 120vh;
+    }
+}
+@media screen and (max-width:425px){
+    .container{
+        padding: 0 10px;
+    }
+    header{
+        padding:10px;
+    }
+    header .bake .menu img{
+        width: 20px;
+        margin-right: 10px;
+    }
+    header .bake .logo img{
+        width: 30px;
+    }
+    header .bake p{
+        display: none;
+    }
+    nav .text button.connect{
+        font-size:10px;
+        padding: 8px 20px;
+    }
+    nav .text .setting img{
+        width: 20px;
+    }
+    main{
+        padding: 0;
+    }
+    .section1 h3{
+        font-size:14px;
+        margin-right: 20px;
+    }
+    .section2 .harvest .logo img{
+        width: 30px;
+    }
+    .section2 .harvest .amount{
+        font-size: 18px;
+        }  
+       .section2 .harvest span{  
+     font-size: 14px;
+    margin: 0 10px;
+     }
+    .modal-popup{
+        padding: 0;
+        width: 100%;
+        height: 217vh;
+    }
+    .modal-popup .modal{
+        width: 380px;
+        height: 450px;
+        margin:60px auto;
+    }
+    .modal-popup .modal .crypto-wallet{
+        gap: 20px;
+    }
+}
